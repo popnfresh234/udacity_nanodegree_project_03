@@ -39,7 +39,7 @@ public class PagerFragment extends Fragment
 //            viewFragments[i].setFragmentDate(mformat.format(fragmentdate));
 
 
-            //LOAD OLD DATA
+            //Load data from March 2015 for testing
             Date dumymDate = new Date();
             Date fragmentdate = new Date(System.currentTimeMillis() + ((i - 2) * 86400000));
             String dateSt = "March 3, 2015";// start jd
@@ -56,7 +56,7 @@ public class PagerFragment extends Fragment
             SimpleDateFormat mformat = new SimpleDateFormat("yyyy-MM-dd");
             viewFragments[i] = new MainScreenFragment();
             viewFragments[i].setFragmentDate(mformat.format(fragmentdate));
-            //DELETE LATER
+            //End testing data
 
         }
         mPagerHandler.setAdapter(mPagerAdapter);
